@@ -26,6 +26,7 @@ function updateVolume() {
 	// knowing this is the volume input, how do I get the volume value "<input type="range" id="slider" min="0" max="100" value="100" step="10">"
 	var volume = document.querySelector("#slider").value;
 	video.volume = volume / 100;
+	document.querySelector("#volume").innerHTML = volume + "%";
 	console.log("Volume: " + volume);
 }
 
